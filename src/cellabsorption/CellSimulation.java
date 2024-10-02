@@ -53,15 +53,10 @@ public class CellSimulation {
     }
 
     private void handleCellInteraction() {
-        // for i from 0 up to max cell index
         for (int i=0; i<cells.size(); i++){
-            // get cell at index i
             Cell cell0 = cells.get(i);
-            // for j from i+1 up to max cell index
             for (int j = i+1; j < cells.size(); j++){
-                // get cell at index j
                 Cell cell1 = cells.get(j);
-                // make the two cells interact
                 cell0.interactWith(cell1);
             }
         }
@@ -70,6 +65,4 @@ public class CellSimulation {
     private static double sqr(double x) {
         return x * x;
     }
-
-   
 }

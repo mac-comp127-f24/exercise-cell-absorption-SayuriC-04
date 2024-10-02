@@ -5,7 +5,6 @@ import edu.macalester.graphics.Point;
 
 import java.awt.Color;
 
-
 public class Cell {
     private static final double
         WIGGLINESS = 0.2,
@@ -14,7 +13,6 @@ public class Cell {
     private Ellipse shape;
     private double radius;
     private double direction;
-
 
     public Cell(double x, double y, double radius, Color color) {
         shape = new Ellipse(x, y, radius * 2, radius * 2);
